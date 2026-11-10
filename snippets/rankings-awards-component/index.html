@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rankings and Awards Component Demo</title>
+
+    <link rel="stylesheet" href="rankings-awards.css">
+
+    <!-- Font Awesome demo dependency -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <main>
+
+        <section class="rankings-awards">
+
+            <div class="rankings-awards__inner">
+
+                <header class="rankings-awards__header">
+                    <h2>Rankings &amp; Recognition</h2>
+
+                    <p class="rankings-awards__description">
+                        A reusable, responsive component for presenting
+                        rankings, certifications, awards and other
+                        recognition.
+                    </p>
+                </header>
+
+
+                <div
+                    class="rankings-awards__carousel"
+                    role="region"
+                    aria-roledescription="carousel"
+                    aria-label="Rankings and recognition"
+                    data-rankings-carousel
+                >
+
+                    <p
+                        class="visually-hidden"
+                        data-rankings-instructions
+                    >
+                        On smaller screens, swipe or use the previous
+                        and next buttons to browse the items.
+                    </p>
+
+
+                    <ul
+                        class="rankings-awards__grid"
+                        data-rankings-track
+                    >
+
+                        <!-- Text graphic -->
+
+                        <li class="rankings-awards__item">
+
+                            <article
+                                class="rankings-awards__card"
+                                data-badge-color="purple"
+                            >
+
+                                <div
+                                    class="rankings-awards__visual
+                                           rankings-awards__visual--purple"
+                                >
+
+                                    <div
+                                        class="rankings-awards__graphic
+                                               rankings-awards__graphic--text"
+                                    >
+                                        <span>Top 5</span>
+                                    </div>
+
+                                </div>
+
+                                <h3>Top-Ranked Program</h3>
+
+                                <p class="rankings-awards__source">
+                                    <a href="#">
+                                        Example Education Review
+                                    </a>
+                                </p>
+
+                            </article>
+
+                        </li>
+
+
+                        <!-- Icon graphic -->
+
+                        <li class="rankings-awards__item">
+
+                            <article
+                                class="rankings-awards__card"
+                                data-badge-color="gold"
+                            >
+
+                                <div
+                                    class="rankings-awards__visual
+                                           rankings-awards__visual--gold"
+                                >
+
+                                    <div
+                                        class="rankings-awards__graphic
+                                               rankings-awards__graphic--icon"
+                                        role="img"
+                                        aria-label="Award trophy"
+                                    >
+                                        <span
+                                            class="fa-solid fa-trophy"
+                                            aria-hidden="true"
+                                        ></span>
+                                    </div>
+
+                                </div>
+
+                                <h3>Excellence Award</h3>
+
+                                <p class="rankings-awards__source">
+                                    Example Professional Association
+                                </p>
+
+                            </article>
+
+                        </li>
+
+
+                        <!-- White visual -->
+
+                        <li class="rankings-awards__item">
+
+                            <article
+                                class="rankings-awards__card"
+                                data-badge-color="white"
+                            >
+
+                                <div
+                                    class="rankings-awards__visual
+                                           rankings-awards__visual--white"
+                                >
+
+                                    <div
+                                        class="rankings-awards__graphic
+                                               rankings-awards__graphic--icon"
+                                        role="img"
+                                        aria-label="Recognition star"
+                                    >
+                                        <span
+                                            class="fa-solid fa-star"
+                                            aria-hidden="true"
+                                        ></span>
+                                    </div>
+
+                                </div>
+
+                                <h3>Distinguished Recognition</h3>
+
+                                <p class="rankings-awards__source">
+                                    Independent Review Organization
+                                </p>
+
+                            </article>
+
+                        </li>
+
+
+                        <!-- Unboxed text -->
+
+                        <li class="rankings-awards__item">
+
+                            <article
+                                class="rankings-awards__card"
+                                data-badge-color="none"
+                            >
+
+                                <div
+                                    class="rankings-awards__visual
+                                           rankings-awards__visual--none"
+                                >
+
+                                    <div
+                                        class="rankings-awards__graphic
+                                               rankings-awards__graphic--text"
+                                    >
+                                        <span>#1</span>
+                                    </div>
+
+                                </div>
+
+                                <h3>Student Choice</h3>
+
+                                <p class="rankings-awards__source">
+                                    Annual Student Survey
+                                </p>
+
+                            </article>
+
+                        </li>
+
+
+                        <!-- Another icon example -->
+
+                        <li class="rankings-awards__item">
+
+                            <article
+                                class="rankings-awards__card"
+                                data-badge-color="purple"
+                            >
+
+                                <div
+                                    class="rankings-awards__visual
+                                           rankings-awards__visual--purple"
+                                >
+
+                                    <div
+                                        class="rankings-awards__graphic
+                                               rankings-awards__graphic--icon"
+                                        role="img"
+                                        aria-label="Medal"
+                                    >
+                                        <span
+                                            class="fa-solid fa-medal"
+                                            aria-hidden="true"
+                                        ></span>
+                                    </div>
+
+                                </div>
+
+                                <h3>Achievement Recognition</h3>
+
+                                <p class="rankings-awards__source">
+                                    Example Accrediting Organization
+                                </p>
+
+                            </article>
+
+                        </li>
+
+                    </ul>
+
+
+                    <div
+                        class="rankings-awards__controls"
+                        data-rankings-controls
+                    >
+
+                        <button
+                            class="rankings-awards__button"
+                            type="button"
+                            aria-label="Show previous ranking or award"
+                            data-rankings-previous
+                        >
+                            <span aria-hidden="true">&#x2039;</span>
+                        </button>
+
+                        <button
+                            class="rankings-awards__button"
+                            type="button"
+                            aria-label="Show next ranking or award"
+                            data-rankings-next
+                        >
+                            <span aria-hidden="true">&#x203A;</span>
+                        </button>
+
+                    </div>
+
+
+                    <p
+                        class="visually-hidden"
+                        aria-live="polite"
+                        aria-atomic="true"
+                        data-rankings-status
+                    ></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="rankings-awards.js"></script>
+
+</body>
+</html>
